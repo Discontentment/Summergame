@@ -1,0 +1,3 @@
+C:/Users/wespe/Documents/Visual Studio 2022/projects/Summergame2025/build/CMakeFiles/Summergame.dir
+C:/Users/wespe/Documents/Visual Studio 2022/projects/Summergame2025/build/CMakeFiles/edit_cache.dir
+C:/Users/wespe/Documents/Visual Studio 2022/projects/Summergame2025/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "configurePresets": [
+    {
+      "name": "mingw-vcpkg",
+      "displayName": "MinGW (GCC) with Vcpkg",
+      "description": "Uses MSYS2 MinGW64's GCC compiler and vcpkg dependencies.",
+      "generator": "Ninja", 
+      "binaryDir": "${sourceDir}/build",
+
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "C:/dev/vcpkg/scripts/buildsystems/vcpkg.cmake", 
+        "VCPKG_TARGET_TRIPLET": "x64-mingw-dynamic" 
+      },
+      "environment": { 
+        "VCPKG_ROOT": "C:/dev/vcpkg" 
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "default",
+      "configurePreset": "mingw-vcpkg"
+    }
+  ],
+  "testPresets": [
+    {
+      "name": "default",
+      "configurePreset": "mingw-vcpkg"
+    }
+  ]
+}
