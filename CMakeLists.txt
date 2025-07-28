@@ -14,6 +14,8 @@ target_link_libraries(${PROJECT_NAME} PRIVATE raylib fmt::fmt) # fmt::fmt is com
 # Add platform-specific system libraries Raylib needs (vcpkg often handles some of these)
 if(WIN32)
     target_link_libraries(${PROJECT_NAME} PRIVATE winmm gdi32 opengl32)
+elseif(APPLE)
+    # Raylib handles this on macOS via vcpkg; no extra system libs usually needed
 elseif(UNIX) # Covers both Linux and macOS
     target_link_libraries(${PROJECT_NAME} PRIVATE m) # For math functions
 endif()
